@@ -1,31 +1,30 @@
 package day50_polymorphism;
+// CAT CLASS INHERITS FROM ANIMAL
+final class  Cat extends Animal{  // total of 3 variables and 3 methods
+    // we make class final so that no one can override the method scratch() which belongs only to Cat
+    // we can't make the method scratch() static (so it doesn't get overridden)
+    // because we need to use the instance variable catName in it
 
-/*
-2. create subclass of Animal named Cat
-            variable: catName
-            methods: scratch
- */
-public final class Cat extends Animal{ // 3 var, 3 ins method
-    public String catName;
+    public String catName; // inherited age and gender
+    public void scratch(){
+        System.out.println(catName+" is scratching herself");
+    }
 
+    @Override
+    public void eat(){
+        System.out.println(catName+" is eating ");
+    }
+    @Override
+    public void sleep(){
+        System.out.println(catName+" is sleeping");
+    }
+    // constructor
     public Cat(String catName, String gender, int age){
-        this.catName =catName;
+        this.catName = catName;
         this.gender = gender;
         this.age = age;
     }
 
 
-    public void eat(){
-        System.out.println("Cat "+catName+" is eating");
-    }
-
-    @Override
-    public void sleep(){
-        System.out.println("Cat "+catName+" is sleeping");
-    }
-
-    public void scratch(){
-        System.out.println("Cat "+catName+" is scratching");
-    }
 
 }
