@@ -29,6 +29,20 @@ public class sets {
 
         System.out.println(numbers);
 
+        System.out.println("==========================");
+        HashSet<String> hashSet = new HashSet<>();
+        hashSet.add(null);
+
+        System.out.println(hashSet);
+
+        TreeSet<String> treeset = new TreeSet<>();
+        treeset.add(null);
+
+        System.out.println(treeset);
+
+
+
+
 
     }
 
