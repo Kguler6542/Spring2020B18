@@ -4,7 +4,7 @@ package day17_WhileLoops;
 3. write a program which prints out the numbers from 1 to 30:
             1. for numbers which are divisible by 3, print "FIN" instead of the number.
             2. for numbers which are divisible by 5, print "RA" instead of the number
-            3. for numbers which are a divisible by both 3 and 5, print "FINRA" instead of the number
+            3. for numbers which are a divisible by both 3 and 5, print "FINDRA" instead of the number
         Ex:
             1 2 FIN 4 RA FIND .... FINDRA
  */
