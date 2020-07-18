@@ -7,15 +7,7 @@ Topic: Iterable
        Map Intro
 class starts at 10:10am
 Package Name: day53_Iterator_Maps
-warmup tasks:
-    1. write a program that remove the duplicates fron an array of String
-    2. write a program that can remove the duplicates from an arrayList of String
-    3. what are the differences between List and Set
-            List: Accepts duplicates, has index
-                    Stack: LIFO
-            Set: does not accept duplicates, does not have index
-            Queue: Accepts duplicates,  does not have index, FIFO
-    4. how to achieve thread safety
+
 Iterable(I): Root interface
         classes that implements iterable, gains the ability to iterate the objects
         we cna apply Iterator(I) to the classes that are implementing Iterable

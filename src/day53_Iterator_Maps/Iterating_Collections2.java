@@ -68,7 +68,7 @@ public class Iterating_Collections2 {
         // verify 5, 6, 9, 8 are contained in the list
         boolean result = list.containsAll( Arrays.asList(5, 6, 9, 8, 11 ) ); // false
 
-        System.out.println(     list.containsAll( Arrays.asList(5, 6, 9, 8, 11 ) )      );
+        System.out.println(   list.containsAll( Arrays.asList(5, 6, 9, 8, 11 ) )      );
         System.out.println( result );
 
 

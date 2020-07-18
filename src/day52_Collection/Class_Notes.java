@@ -2,11 +2,9 @@ package day52_Collection;
 
 public class Class_Notes {
     /*
-  06/22/2020
-Topics: Collection
-package name: day52_Collection
-please go to Canvas -> java -> modules - > day52
-        download day52 presentation and Collection Hierarchy
+  06/22/202   -Topics: Collection--package name: day52_Collection
+
+
 Data Structurs: in order to managae the data effeciently and in an organized manner
 
         -- Array (fixed)
