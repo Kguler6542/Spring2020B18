@@ -26,6 +26,7 @@ public class Uniques {
 
         list.addAll(Arrays.asList(1,1,2,3,4,5,5));
 
+
         list.removeIf(p -> Collections.frequency(list, p) > 1); // if frequency is greater than one remove it
 
         System.out.println(list);

@@ -27,6 +27,7 @@ public class ExtractChars3 {
         System.out.println(digits);
 
 
+
         ArrayList<Character> specialChars = new ArrayList<>( Arrays.asList(ch) );
         specialChars.removeAll(letters);
         specialChars.removeAll(digits);

@@ -10,7 +10,7 @@ public class BankAccount {
 
     String accountHolder;
     long accountNumber;
-    double balance;
+    double balance=100;
 
 
     public void checkingBalance(){

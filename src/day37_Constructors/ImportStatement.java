@@ -5,8 +5,10 @@ package day37_Constructors;
 import java.util.*; // imports all the classes from java util
 
 /*
+
 import static day37_Constructors.Data.staticVariable;
 import static day37_Constructors.Data.staticMethod;
+
  */
 
 import static day37_Constructors.Data.*;

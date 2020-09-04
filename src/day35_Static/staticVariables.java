@@ -7,7 +7,10 @@ public class staticVariables {
     static int a3 = 300; // static
 
     public static void main(String[] args) {
+
         int a1 = 100; // local variable
+        //int a2 = 200; // instance
+        //    static int a3 = 300; // static
 
         staticVariables obj1 = new staticVariables();
         obj1.a2 = 1000;
@@ -23,6 +26,7 @@ public class staticVariables {
         System.out.println(a1);
         System.out.println( obj1.a2 );
         System.out.println( obj2.a2 );
+        System.out.println(obj1.a2);
 
         System.out.println( obj1.a3 ); // 5000
         System.out.println( obj2.a3 ); // 5000
