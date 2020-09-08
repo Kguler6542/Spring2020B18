@@ -3,56 +3,24 @@ package day06_Shorthnd_LogicalOperators;
 public class IfStatementsPractice {
 
     public static void main(String[] args) {
-        int a =100;
-        int b = 200;
+        //whole number : byte, short, int, long
+        //decimals: float, double
 
-        if(a > b){ // false
-            System.out.println(a+" is greater than "+b);
-        }
+        int a1 = 100;
+        float f1 = (long) a1;
+        // f1 = 100L
+        // f1 = 100.0
+        System.out.println(f1);
 
-       // boolean bGreater = b > a;
-        if(b>a){
-            System.out.println(b+" is greater than " + a );
-        }
+        long l1 = (long) f1;
+        // l1 = 100
+        System.out.println(l1);
 
+        String name;
+        //System.out.println(name);//local variable cannot be used without initializing
+        name = "Cybertek"; // in java: first come first serve
+        System.out.println(name);
 
-        if(a ==  b){
-            System.out.println(a +" is equal to " + b );
-        }
-
-        System.out.println("==================================================");
-        int x = 300;
-        int y = 300;
-        boolean xGreater = x > y;
-        boolean yGreater = y > x;
-
-        if(xGreater){
-            System.out.println(x+" is gereater than "+y);
-        }
-
-        if(yGreater){
-            System.out.println(y+" is greater than "+x);
-        }
-
-/*
-        if(xGreater == false && yGreater == false){
-            System.out.println(x+" is equal to "+y);
-        }
-*/
-
-/*
-        if(!xGreater  && !yGreater){
-            System.out.println(x+" is equal to "+y);
-        }
-*/
-
-        if(xGreater == yGreater){
-            System.out.println(x+" is equal to "+y);
-        }
-
-
-        // 10,000,000
-        int U = 10_000_000; // to increase the readability, similar function with comma in accounting
 
 
     }

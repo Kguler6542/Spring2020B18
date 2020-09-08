@@ -3,7 +3,7 @@ package day10_Switch_Scanner;
 public class localVariables {
     public static void main(String[] args) {
      // declare variable : DateType  variableName;
-        int a=0;
+        int a=0; // this is a local variable because it is declared within this block {    }
 
         System.out.println(a);
 

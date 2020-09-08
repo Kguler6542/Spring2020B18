@@ -11,10 +11,19 @@ public class ValidTriangle {
 
     public static void main(String[] args) {
 
-        double angle1 = 30;
-        double angle2 = 50;
-        double angle3 = 100;
+        int a = 90;
+        int b = 30;
+        int c = 60;
+        if (a + b + c == 180){
+            System.out.println("triangle is valid");
+        }
+        if (a + b + c != 180){
+            System.out.println("triangle is not valid");
+        }
 
+        double angle1 = 30.5;
+        double angle2 = 49.5;
+        double angle3 = 100;
 
         short sumOfAngles =  (short)(angle1 + angle2 +angle3);
 
@@ -26,7 +35,6 @@ public class ValidTriangle {
         if(sumOfAngles != 180) {
             System.out.println("The shape is not a valid triangle");
         }
-
 
 
     }

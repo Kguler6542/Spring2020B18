@@ -21,11 +21,22 @@ public class Switch_Practice {
 
         System.out.println("===================================================");
 
-        /*
-        200, OK
-        201, Created
-        202, Accepted
-         */
+      /*
+200, OK
+201, Created
+202, Accepted
+301, Moved Permanently
+303, See Other
+304, Not Modified
+307, Temporary Redirect
+400, Bad Request
+401, Unauthorized
+403, Forbidden
+404, Not Found
+410, Gone
+500, Internal Server Error
+503, Service Unavailable
+ */
 
         int statusCode =800;
         String result = "";

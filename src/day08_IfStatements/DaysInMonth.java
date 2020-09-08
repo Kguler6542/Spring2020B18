@@ -12,35 +12,41 @@ package day08_IfStatements;
 public class DaysInMonth {
 
     public static void main(String[] args) {
-        byte month = 11;
+        byte months = 12;
 
-        boolean days28 =   month == 2;
-        boolean days30 =  month == 4 || month ==6 || month == 9 || month ==11;
+        String result = " ";
 
-        boolean days31 = days28 == false && days30 == false;
+        if( months == 1 ){
+            result = "January has 31 days";
+        }else if(months == 2){
+            result = "Feburary has 28 or 29 days";
+        }else if(months ==3){
+            result = "March has 31 days";
+        }else if(months == 4){
+            result = "April has 30 days";
+        }else if(months == 5){
+            result = "May has 31 days";
+        }else if(months == 6){
+            result = "June has 30 days";
+        }else if(months ==7){
+            result ="July has 31 days";
+        } else if(months ==8 ){
+            result = "August has 31 days";
+        } else if(months == 9){
+            result = "September has 30 days";
+        }else if(months == 10){
+            result = "October has 31 days";
+        }else if(months == 11){
+            result = "November has 30 days";
+        } else if( months ==12){
+            result ="December has 31 days";
+        } else{
 
-        // boolean days31_2 = !days28  && !days30 ;
+            result ="Invalid Entry";
 
-        int days = 0;
-
-        if(days28){
-            //  System.out.println("It has 28 days");
-            days = 28;
         }
 
-        if(days30){
-            //  System.out.println("It has 30 days");
-            days =30;
-        }
-
-        if(days31){
-            //   System.out.println("It has 31 days");
-            days = 31;
-        }
-
-
-        System.out.println("It has "+days +" days");
-
+        System.out.println(result);
 
     }
 

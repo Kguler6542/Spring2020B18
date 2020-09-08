@@ -3,41 +3,22 @@ package day06_Shorthnd_LogicalOperators;
 public class SingleIfStatement {
 
     public static void main(String[] args) {
-
-
-
-        boolean coldWather = false;
-
-        if(coldWather){
-            // true
-            System.out.println("Wear your hat");
-            System.out.println("Wear your jacket");
+        boolean coldWeather = true;
+        if (coldWeather) {
+            //true
+            System.out.println("put on your coat, gloves, and hat");
 
         }
 
-
-        boolean  coronaDetected =true;
-
-        if(coronaDetected){
-
-            System.out.println("Buy more toilet papers");
-            System.out.println("Buy more water");
-            System.out.println("Stay at home");
-            System.out.println("Do more java coding");
-
-        }
-
-        System.out.println("=================================================");
-        int a = 201;
-        boolean evenNumber = a % 2 == 0;  // if a number can be devided by 2 without the reminader
-        //    boolean oddNumber = a % 2 != 0;  // if the number cannot be divided by 2 evenly
-
-        if( evenNumber ){
-            System.out.println(a +" is even number" );
-        }
-
-        if(!evenNumber){  // if the number is not even number, then it must be odd
-            System.out.println(a+" is odd number ");
+        int a = 100;
+        boolean evenNumber = a % 2 ==0; // if a number can be divided by 2 with 0 remainder
+        if (evenNumber) {
+            System.out.println(a + " is even number");
+            // if we use 101 instead of 100 it will not print anything
+            boolean oddNumber = a % 2 !=0; // if the number cannot be devided by 2 evenly
+            if (oddNumber) {
+                System.out.println(a+ " is odd number"); // if we change number to 101
+            }
         }
 
 

@@ -4,33 +4,36 @@ public class SwitchStatement_Practice3 {
 
     public static void main(String[] args) {
 
-        char ch ='C';
-        String result = ""; //ABCDInvalid
+        char ch ='D';
+        String result="";
 
-        switch(ch){
+        switch (ch){
             case 'A':
-                System.out.println("A");
-                //  result += "A";
+                //System.out.println("A");
+                result ="A";// without break statement we will get logic error
+
 
             case 'B':
-                System.out.println("B");
-                //   result += "B";
+                //System.out.println("B");
+                result="B";
 
 
             case 'C':
-                System.out.println("C");
-                //  result += "C";
+                //System.out.println("C");
+                result="C";
+
 
             case 'D':
-                System.out.println("D");
-                //  result += "D";
+                //System.out.println("D");
+                result="D";
+
 
             default:
-                System.out.println("Invalid");
-                //  result += "Invalid";
+                //System.out.println("Invalid");
+                result="Invalid";
         }
-
-        // System.out.println(result);
+        System.out.println(result);
+        // it will print ABCDInvalid if we put result+=... and we remove break
 
 
 
