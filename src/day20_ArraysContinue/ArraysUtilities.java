@@ -3,6 +3,7 @@ package day20_ArraysContinue;
 import java.util.Arrays;
 
 public class ArraysUtilities {
+
     // Arrays.toString(arrayName) method: converts any array into a string ==> returns us string ==> we can assign it to string
     // we use this method to PRINT  any array like this: System.out.println( Arrays.toString(nums))
     //OR we assign to a string then we print that string
@@ -26,8 +27,6 @@ public class ArraysUtilities {
         // since each element is a number so if we add +1 and print ==> result will be addition of our value at index 0 and the number 1
         // ==> value at index 0 = 10.0, 10 +1 = 11.0
         System.out.println(nums[0]+ 1); // -->11.0 when you apply + to two numbers it does addition
-
-
 
 
 

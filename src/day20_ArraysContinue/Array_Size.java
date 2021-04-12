@@ -24,5 +24,7 @@ public class Array_Size {
         System.out.println(nums[0]); // --> 0
         System.out.println(nums[1]); // --> 0
         System.out.println(nums[2]); //--> 0
+
+
     }
 }

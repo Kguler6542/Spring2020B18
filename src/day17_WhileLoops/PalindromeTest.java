@@ -3,21 +3,27 @@ package day17_WhileLoops;
 public class PalindromeTest {
 
     public static void main(String[] args) {
-        String str = "Anna";
 
-        String reversedStr = "";  // store the reversed version of str
+        String str = "I love school";
+        String reversedStr = ""; // to store the reversed version of str
 
-        int index =  str.length()-1;  // last index number
+        //initialization will be outside loop
+        // we start iniitalization from the last letter of the word
 
-        while(index >=  0){
-            reversedStr  += str.charAt(index);
+        int index = str.length()-1; // last index number
 
+        while (index >=0){
+            reversedStr += str.charAt(index);
             index--;
         }
 
-        boolean palindrome = reversedStr.equalsIgnoreCase(str);
+        //  System.out.println(reversedStr); I love school --> loohcs evol I
+
+        boolean palindrome = reversedStr.equals(str);
 
         System.out.println(palindrome);
+
+
 
     }
 

@@ -20,71 +20,85 @@ public class Methods {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello Cybertek");
-        printHello5();
-        System.out.println("Hello Batch18");
-        printHello5();
-        System.out.println("Hello Saim");
-        printHello5();
+        // Here we will do it the long way without calling a method
+        // step 1:
+        System.out.println("Hello Cyberteck");
 
-        System.out.println("=======================================");
+        //step 2:
+        for (int i = 0 ; i < 5 ; i ++){
+            System.out.println("Hello World");      // since this is going to be repeated so we can create a method for it
+        }
 
-        evenNumbers1_100();
+        //step 3:
+        System.out.println("Hello Batch 18");
 
-        OddNumbers1_100();
-
-
-    }
-
-    public static void printHello5(){
-
-        for(int i=0; i < 5; i++){
+        // step 4:
+        for (int i = 0 ; i < 5 ; i ++){
             System.out.println("Hello World");
         }
 
-    }
+        //step 5:
+        System.out.println("Hello Saim");
 
-
-    public static void evenNumbers1_100(){
-
-        for(int i = 1; i <= 100; i++){
-
-            if(i%2 ==0){
-                System.out.print(i+" ");
-            }
-
+        // step 6:
+        for (int i = 0 ; i < 5 ; i ++){
+            System.out.println("Hello World");
         }
 
-        System.out.println();
+        System.out.println("==============================================================================");
+
+        // now we do same task by calling the method we created  for the above steps:
+
+        // step 1:
+        System.out.println("Hello Cyberteck");
+
+        //step 2:
+        printHello5();  // This is the method we created and we call to execute here in main method
+
+        //step 3:
+        System.out.println("Hello Batch 18");
+
+        // step 4:
+        printHello5();
+
+        //step 5:
+        System.out.println("Hello Saim");
+
+        // step 6:
+        printHello5();
+
+
+        System.out.println("===================================================================");
+
+        evenNums();     // prints all even nums 1 ~ 100
+        oddNums();      // prints all odd nums 1 ~ 100
+
 
     }
-
-
-    public static void OddNumbers1_100(){
-
-        for(int i=1; i <= 100; i++){
-
-            if(i%2 != 0){
-                System.out.print(i+" ");
-            }
-
+    //Our 1st method we create
+    public static void printHello5(){
+        for (int i = 0 ; i < 5 ; i ++){
+            System.out.println("Hello World");
         }
-
-        System.out.println();
-
+    }
+    // Our 2nd method we create: print even number between 1~100
+    public static void evenNums (){
+        for (int i = 1 ; i <= 100; i++){
+            if (i % 2 == 0 ){
+                System.out.print(i + " ");
+            }
+        }
     }
 
-
+    // our 3rd method we create: print odd number between 1~100
+    public static void oddNums (){
+        for (int i = 1 ; i <= 100; i++){
+            if (i % 2 != 0 ){
+                System.out.print(i + " ");
+            }
+        }
+    }
 
 
 }
 
-/*
-        step1: void method (without parameter)
-        step2: void method(with parameter)
-        step3: return method (without parameter)
-        step4: return method (with parameter)
-        step5: using the method different clases
-        step6: overloading
-            ...
- */

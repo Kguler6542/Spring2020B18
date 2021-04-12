@@ -38,26 +38,25 @@ public class StringManipulations {
         System.out.println(s2);
 
         String r1 = "Java is fun";
-        r1 =  r1.concat(", and it's easy");
+        r1 = r1.concat(", and it is easy");
 
-        System.out.println(r1);
+        System.out.println(r1);// Java is fun, and it is easy
 
         String name1 = "CYBERTEK";
+        name1 = name1.toLowerCase();
+        System.out.println(name1); //cybertek
 
-        name1 =   name1.toLowerCase();
+        String name2= "cybertek school";
+        name2 = name2.toUpperCase();
+        System.out.println(name2); // CYBERTEK SCHOOL
 
+        name1= name1.toUpperCase();
         System.out.println(name1);
 
-        String name2 = "cybertek school";
-        name2 = name2.toUpperCase();
-
-        System.out.println(name2);
-
-
-        String A1 = "        Today            is           a          great       day            ";
-        A1 =   A1.trim();
-        System.out.println(A1);
-
+        String A1 = "      Today    is a great day     ";
+        System.out.println(A1); // prints sentence with space up front and at the end
+        A1 = A1.trim();
+        System.out.println(A1); // prints after trimming space that is not separating words
 
     }
 

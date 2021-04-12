@@ -16,6 +16,13 @@ public class NestedLoop2 {
          * * * * * * * *
          * * * * * * * * *
          */
+        // first we create a loop that will repeat for how many lines
+        // after printing each line I need to give one empty print statement to break the line
+        // to repeat the first step for how many * in each line I need to put in a loop that will run for that number of times
+        // but this will give me a rectangle or square
+        // but I want to print one * first line... then 2 * on the second line then 3* on the 3rd line..
+        // so when j value is 1 it should print *, when j value is 2 it should print ** ....
+        // that's why I put in the inner loop(i = 1; i <= j ; i ++)
 
         for(int j= 1; j <= 9; j++){
 
@@ -23,10 +30,10 @@ public class NestedLoop2 {
                 System.out.print("* ");
             }
             System.out.println();
-
         }
 
-
+        System.out.println();
+        System.out.println("=======================================================");
         /*
          * * * * * * * * *
          * * * * * * * *
@@ -38,7 +45,6 @@ public class NestedLoop2 {
          * *
          *
          */
-        System.out.println("============================");
 
         for(int j= 9; j >= 0; j-- ){
 
@@ -82,8 +88,6 @@ public class NestedLoop2 {
 
 
         }
-
-
 
 
 

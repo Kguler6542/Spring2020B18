@@ -4,30 +4,28 @@ package day13_StringClass;
 public class StringLiterals {
 
     public static void main(String[] args) {
-        String str1 = "Cat"; // String Pool
-        String str2 = new String("Cat"); // Java Heap
 
-        System.out.println(str1 +" : "+str2);
-        System.out.println(str1 == str2 );  // two different object, false
+        String str1 = "Cat"; //stored in String Pool
+        // doesn't take duplicate objects. stores similars under one object
+        String str2 = new String ("Cat"); // Java Heap
+        System.out.println(str1==str2); // false
 
-        String str3 = "Cat"; // String pool
+        String str3 = "Cat";
+        System.out.println(str1==str3); // true same text = same object
 
-        System.out.println(str1 == str3 );  // true,
-
+        // everytime we create a new word it creates a new object in memory. Two independent objects
         String str4 = new String("Cat");
-        System.out.println(str2 == str4); // two independent object , false
+        System.out.println(str2 == str4); // false different objects
 
+        String s1 = "Java"; // goes to String Pool (it's stored there), immutable cann't be modified
+        System.out.println(s1); //Java
+        s1="JavaScript";// New object is created in memory
+        System.out.println(s1); //JavaScript
 
-        String s1 = "Java";  // String Pool, immutable we cannot modify it
-        s1 = "JavaScript"; // new object will be created in memory
+        String s2 = "Java";
 
-        System.out.println(s1); // Java Script
+        System.out.println(s1 == s2);// false ... different
 
-        String s2 = "Java"; // no new object will be created in the memory
-
-
-        System.out.println(s1 == s2 ); // false
-        //              "JavaScript" == "Java"
 
 
 

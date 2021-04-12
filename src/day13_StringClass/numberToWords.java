@@ -1,7 +1,8 @@
 package day13_StringClass;
 
 /*
-2. write a java program that can convert any given numbers between 0 ~ 9 to words, if the number is greater than 9 or less than zero, out put should be "Invalid".
+2. write a java program that can convert any given numbers between 0 ~ 9 to words,
+if the number is greater than 9 or less than zero, out put should be "Invalid".
 			MUST use Scanner and switch statement
  */
 
@@ -10,52 +11,54 @@ import java.util.Scanner;
 public class numberToWords {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter number between 0 ~ 9");
+        int num = scan.nextInt();
 
-        System.out.println("Enter a number between 0 ~ 9");
-        int num =  input.nextByte();
-        String result = "";
-
-        switch(num){
-            case 0: result = "Zero";
+        switch (num){
+            case 0:
+                System.out.println("Zero");
                 break;
-
-            case 1:result = "One";
+            case 1:
+                System.out.println("One");
                 break;
-
-            case 2:result = "Two";
+            case 2:
+                System.out.println("Two");
                 break;
-
-            case 3:result = "Three";
+            case 3:
+                System.out.println("Three");
                 break;
-
-            case 4:result = "Four";
+            case 4:
+                System.out.println("Four");
                 break;
-
-            case 5:result = "Five";
+            case 5:
+                System.out.println("Five");
                 break;
-
-            case 6:result = "Six";
+            case 6:
+                System.out.println("Six");
                 break;
-
-            case 7:result = "Seven";
+            case 7:
+                System.out.println("Seven");
                 break;
-
-            case 8:result = "Eight";
+            case 8:
+                System.out.println("Eight");
                 break;
-
-            case 9:result = "Nine";
+            case 9:
+                System.out.println("Nine");
                 break;
-
-            default: result = "Invalid";
+            default:
+                System.out.println("Invalid");
+                break;
         }
 
+        String result= (num==0)?"Zero":(num==1)?"One":(num==2)?"Two":(num==3)?"Three":(num==4)?"Four":
+                (num==5)?"Five":(num==6)?"Six":(num==7)?"Seven":(num==8)?"Eight":(num==9)?"Nine":"Invalid";
         System.out.println(result);
 
-        String result2 = (num == 0) ? "Zero" : (num == 1) ? "One" :(num == 2) ? "Two" :(num == 3)? "Three" :(num ==4) ? "Four"
-                :(num == 5)? "Five" :(num == 6) ? "Six" :(num == 7) ? "Seven" :(num == 8)?"Eight":(num == 9)? "Nine" : "Invalid";
 
-        System.out.println(result2);
+
+
+
 
     }
 

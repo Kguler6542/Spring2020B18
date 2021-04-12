@@ -3,40 +3,36 @@ package day21_MultiDimensionalArrays;
 public class Zoo {
 
     public static void main(String[] args) {
+        String [] wild = {"Tiger", "Lion", "Monkey", "Crocodile", "Turtle"};
+        String[] birds = {"Eagle", "Ducks", "Peacock", "Chicken"};
+        //                   0        1          2         3
 
-        String[] wildAnimals = {"Tiger", "Lion", "Monkey", "Turtle", "Corcodile"};
+        String [][]zoo = {wild , birds};
+        //                 0       1
 
-        String[] birds = {"Eagle", "Ducks", "Peacock","Chicken"};
-        //   0        1          2         3
+        String kfc = zoo[1][3]; // "Chicken
+        System.out.println(kfc); // Chicken
 
+        System.out.println("============================================");
 
-
-        String[][] zoo = { wildAnimals, birds  };
-        //             0          1
-
-        String kfc =     zoo[1][3];  // "Chicken"
-
-        System.out.println(kfc);
-
-        System.out.println("=======================================================");
-
-        for( String eachBirds  : zoo[1] ){   // 4 times
-            if(eachBirds.equals("Chicken")){
+        // Use for each loop to print wild animals from zoo except for turtle
+        // then print birds from zoo except for chicken
+        for (String eachBird : zoo [1] ){ // this will execute 4 times
+            if (eachBird.equals( "Chicken")){
                 continue;
             }
-
-            System.out.println(eachBirds);
+            System.out.println(eachBird);
         }
 
-        System.out.println("=======================================================");
-        for( String each : zoo[0] ){  // 5
-            if(each.equals("Turtle")){
+        System.out.println("==============================================");
+
+        for ( String eachWild : zoo [0]){ // this loop will execute 5 times// it starts at 0 always
+            if (eachWild.equals("Turtle")){
                 continue;
             }
-
-            System.out.println(each);
-
+            System.out.println(eachWild);
         }
+
 
 
 
